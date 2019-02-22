@@ -4,7 +4,7 @@
   <groupId>com.github.ziran-ink</groupId>
   <artifactId>ziran-api-server</artifactId>
   <name>ziran-api-server</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <url>https://github.com/ziran-ink/ziran-api-server</url>
   <build>
     <resources>
@@ -91,7 +91,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>com.github.ziran_ink.ziran_api_designer.Main</mainClass>
+              <mainClass>com.github.microprograms.micro_http_server_runtime.MicroHttpServer</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -109,7 +109,7 @@
               <transformers>
                 <transformer>
                   <manifestEntries>
-                    <Main-Class>com.github.ziran_ink.ziran_api_server.Main</Main-Class>
+                    <Main-Class>com.github.microprograms.micro_http_server_runtime.MicroHttpServer</Main-Class>
                     <X-Compile-Source-JDK>${maven.compile.source}</X-Compile-Source-JDK>
                     <X-Compile-Target-JDK>${maven.compile.target}</X-Compile-Target-JDK>
                   </manifestEntries>
