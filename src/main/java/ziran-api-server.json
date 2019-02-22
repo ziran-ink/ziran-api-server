@@ -1,0 +1,269 @@
+{
+	"apiDefinitions": [
+		{
+			"comment": "安全 - 登录",
+			"ext": {
+				"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfjAQkDNzc2kB7UAAAFEElEQVRYw73YX2zdZRkH8M85bU/P6QpNu9p2bLTrOqAdhogyB5PoDXcjaGL0whhDDIl/SnAX6BBj4oWGcMEFGhKcGoOJMcZhUNCAGo1hg0pEMRHPKKVru3btOs422nXntD07Py/O6e/8+7VnWdDv1Xve93ne7/s+/97nd/gfI3aVci2aq34H1hSunaBdpx59+iUMahOzU4egQqtgzhIWnJU1bVHGeblGBHG3+LgDRvRJillzwZK4i85UbF9EqwEtAj1SWq3LOi1tzJi3K2UrCQZ8w314y7+lTcp414oVMXnrEfdMionpkNRnu72G7TPkimOeNF0v3u+ESYftlbxmj7YZ8YhTXjVYv/iEKR+95q0rsd+EpzVVT95sxiPvy/bwVXP2FYfx0tQBzZ7fUimuy5C73W5XQyO+KO8T1VNPeVnblkofMmbWJRlTvtWAIOFFzxSHxfRJGvEfl7dUajLiemzTZXsDgjVpH3Od5Q0Tdep3soHSvLPh+B2N8KYenUXLQreUtxuovBcS5J1pSHBKUm+ZoEeLTKRgi0PuBLlw2+Uwje5xcBOCjEBfmWDAqoUIsXbf8ytP6MUVU6XZJe+C2/zQc0ZrIx6ct+7GMkFKVrZOKO6Ih6UcdFic8NyLLqLdd+zxAY/7XATBknMSbERRn0VLdUJ3Gy3VqlGvO+ZPviIm5owVMQ+6D2zzqONO1ejmXLanTNArVlct2Vs8A65zr+eNGw/XetwbmqbDQB1BTKwyHY/6s9Y6goRDXhYI/FZ/3eqHvSaw6lkHwnpQRpNn/aRs61/6qWh0O+JY0V112O/37t80/4/644YFUo47WrHUUlNr2m2G6pWkliqCE1JqXtri9t+134R3zJsyL+P8pgSXdOlyg912GDLkHx6teJpCr1bfoNdJgUCgYMVCg8L2TQtWFEoa48XkKt3gePQNklKlUUybtojwrcRysSCU0FofKvX+rw3X/JYEVxpoRxAUqvqd9fA+0WixtqkuokyU8Ter5s2YNGe6QRn/tbQBO+3Rb4c36ktmkaCyecka1WxJLiK36zFrtrRDqw75qooW2yDI1ziy8hStPmmX70d64naf8vNS+Qjkavq6uHPlkP2x30QYiw96RtZlD0WU5EEvCaR9MTIRE16qTN5S1lUh5gHTpfi+7OGaJnPIWGlt3XMRpSTlhB+VfZBVqLN4oDMscYF5gTt9QSBu3A9ctBx68aZI7wSVpv6af+qqE+nyh9Ipn9KMh0q/3tCJg+YEAis+H7F9r7QHi66ANdsjLHne172G1z0uj90hcQde8ZiCS77tFxEEKe1WyyY6LaHbTJ3Yv3zWA/5iBs1hQ9uh1xR+ptffvVCXzdCnNXzDcYd599ga7V4pmSjvM2EgbIZD5txWNtGiXPEF3QKdYaVsckPoyM2wV67YexQJLlg00oBgZ0XdvFkjDJt1oeyDZWm3ai26ZRNkvGBEhyvOeDOySSgjZdjJ6kboy2YMNThVs24DdtnW8Nv0FqfdXz21z6zRhhe/WhxxutaMTZ424Y73ZfuPmPRk/S0HveqUI4YbPDFbIWHQl4wbM7AxVf0Ze9inxU1IO2lCxllZ76EQ6f4mCYGk63XqttutRoxI+J3HTEYREHOTu9xl2I2SWuRknROzajriS7lbr0BKt4SYnHPSxvzVW5WvR3Q8pHTq1mNAyg49Al0VDUlRL2tG3qpJq2YtOOtCVAdytX+GNIWN8AYKW2bN/w//BXUGfIOyKQ9IAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAxLTA5VDAzOjU1OjU1KzA4OjAwK1ORbQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMS0wOVQwMzo1NTo1NSswODowMFoOKdEAAABDdEVYdHNvZnR3YXJlAC91c3IvbG9jYWwvaW1hZ2VtYWdpY2svc2hhcmUvZG9jL0ltYWdlTWFnaWNrLTcvL2luZGV4Lmh0bWy9tXkKAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICC8B55bAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGXRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxNTUzMMgZMgAAABh0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxNTUzJYHFKwAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTQ2OTc3MzU127tzlAAAABJ0RVh0VGh1bWI6OlNpemUANTYxODFCd0ZiEwAAAGJ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL2hvbWUvd3d3cm9vdC9uZXdzaXRlL3d3dy5lYXN5aWNvbi5uZXQvY2RuLWltZy5lYXN5aWNvbi5jbi9maWxlcy8xMTkvMTE5OTExMy5wbmeCJ466AAAAAElFTkSuQmCC"
+			},
+			"name": "Security_Login_Api",
+			"requestDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "密码",
+						"example": "pwd123",
+						"javaType": "String",
+						"name": "password",
+						"required": true
+					}
+				]
+			},
+			"responseDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "Token",
+						"example": "e59d4de8-be75-41fc-8841-44d9862d6480",
+						"javaType": "String",
+						"name": "data",
+						"required": true
+					}
+				]
+			}
+		},
+		{
+			"comment": "安全 - 退出",
+			"ext": {
+				"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfjAQkDNzc2kB7UAAAFEElEQVRYw73YX2zdZRkH8M85bU/P6QpNu9p2bLTrOqAdhogyB5PoDXcjaGL0whhDDIl/SnAX6BBj4oWGcMEFGhKcGoOJMcZhUNCAGo1hg0pEMRHPKKVru3btOs422nXntD07Py/O6e/8+7VnWdDv1Xve93ne7/s+/97nd/gfI3aVci2aq34H1hSunaBdpx59+iUMahOzU4egQqtgzhIWnJU1bVHGeblGBHG3+LgDRvRJillzwZK4i85UbF9EqwEtAj1SWq3LOi1tzJi3K2UrCQZ8w314y7+lTcp414oVMXnrEfdMionpkNRnu72G7TPkimOeNF0v3u+ESYftlbxmj7YZ8YhTXjVYv/iEKR+95q0rsd+EpzVVT95sxiPvy/bwVXP2FYfx0tQBzZ7fUimuy5C73W5XQyO+KO8T1VNPeVnblkofMmbWJRlTvtWAIOFFzxSHxfRJGvEfl7dUajLiemzTZXsDgjVpH3Od5Q0Tdep3soHSvLPh+B2N8KYenUXLQreUtxuovBcS5J1pSHBKUm+ZoEeLTKRgi0PuBLlw2+Uwje5xcBOCjEBfmWDAqoUIsXbf8ytP6MUVU6XZJe+C2/zQc0ZrIx6ct+7GMkFKVrZOKO6Ih6UcdFic8NyLLqLdd+zxAY/7XATBknMSbERRn0VLdUJ3Gy3VqlGvO+ZPviIm5owVMQ+6D2zzqONO1ejmXLanTNArVlct2Vs8A65zr+eNGw/XetwbmqbDQB1BTKwyHY/6s9Y6goRDXhYI/FZ/3eqHvSaw6lkHwnpQRpNn/aRs61/6qWh0O+JY0V112O/37t80/4/644YFUo47WrHUUlNr2m2G6pWkliqCE1JqXtri9t+134R3zJsyL+P8pgSXdOlyg912GDLkHx6teJpCr1bfoNdJgUCgYMVCg8L2TQtWFEoa48XkKt3gePQNklKlUUybtojwrcRysSCU0FofKvX+rw3X/JYEVxpoRxAUqvqd9fA+0WixtqkuokyU8Ter5s2YNGe6QRn/tbQBO+3Rb4c36ktmkaCyecka1WxJLiK36zFrtrRDqw75qooW2yDI1ziy8hStPmmX70d64naf8vNS+Qjkavq6uHPlkP2x30QYiw96RtZlD0WU5EEvCaR9MTIRE16qTN5S1lUh5gHTpfi+7OGaJnPIWGlt3XMRpSTlhB+VfZBVqLN4oDMscYF5gTt9QSBu3A9ctBx68aZI7wSVpv6af+qqE+nyh9Ipn9KMh0q/3tCJg+YEAis+H7F9r7QHi66ANdsjLHne172G1z0uj90hcQde8ZiCS77tFxEEKe1WyyY6LaHbTJ3Yv3zWA/5iBs1hQ9uh1xR+ptffvVCXzdCnNXzDcYd599ga7V4pmSjvM2EgbIZD5txWNtGiXPEF3QKdYaVsckPoyM2wV67YexQJLlg00oBgZ0XdvFkjDJt1oeyDZWm3ai26ZRNkvGBEhyvOeDOySSgjZdjJ6kboy2YMNThVs24DdtnW8Nv0FqfdXz21z6zRhhe/WhxxutaMTZ424Y73ZfuPmPRk/S0HveqUI4YbPDFbIWHQl4wbM7AxVf0Ze9inxU1IO2lCxllZ76EQ6f4mCYGk63XqttutRoxI+J3HTEYREHOTu9xl2I2SWuRknROzajriS7lbr0BKt4SYnHPSxvzVW5WvR3Q8pHTq1mNAyg49Al0VDUlRL2tG3qpJq2YtOOtCVAdytX+GNIWN8AYKW2bN/w//BXUGfIOyKQ9IAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAxLTA5VDAzOjU1OjU1KzA4OjAwK1ORbQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMS0wOVQwMzo1NTo1NSswODowMFoOKdEAAABDdEVYdHNvZnR3YXJlAC91c3IvbG9jYWwvaW1hZ2VtYWdpY2svc2hhcmUvZG9jL0ltYWdlTWFnaWNrLTcvL2luZGV4Lmh0bWy9tXkKAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICC8B55bAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGXRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxNTUzMMgZMgAAABh0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxNTUzJYHFKwAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTQ2OTc3MzU127tzlAAAABJ0RVh0VGh1bWI6OlNpemUANTYxODFCd0ZiEwAAAGJ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL2hvbWUvd3d3cm9vdC9uZXdzaXRlL3d3dy5lYXN5aWNvbi5uZXQvY2RuLWltZy5lYXN5aWNvbi5jbi9maWxlcy8xMTkvMTE5OTExMy5wbmeCJ466AAAAAElFTkSuQmCC"
+			},
+			"name": "Security_Logout_Api",
+			"requestDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "Token",
+						"example": "e59d4de8-be75-41fc-8841-44d9862d6480",
+						"javaType": "String",
+						"name": "token",
+						"required": true
+					}
+				]
+			}
+		},
+		{
+			"comment": "工具 - 生成uuid",
+			"ext": {
+				"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfjAQkDNzc2kB7UAAAFEElEQVRYw73YX2zdZRkH8M85bU/P6QpNu9p2bLTrOqAdhogyB5PoDXcjaGL0whhDDIl/SnAX6BBj4oWGcMEFGhKcGoOJMcZhUNCAGo1hg0pEMRHPKKVru3btOs422nXntD07Py/O6e/8+7VnWdDv1Xve93ne7/s+/97nd/gfI3aVci2aq34H1hSunaBdpx59+iUMahOzU4egQqtgzhIWnJU1bVHGeblGBHG3+LgDRvRJillzwZK4i85UbF9EqwEtAj1SWq3LOi1tzJi3K2UrCQZ8w314y7+lTcp414oVMXnrEfdMionpkNRnu72G7TPkimOeNF0v3u+ESYftlbxmj7YZ8YhTXjVYv/iEKR+95q0rsd+EpzVVT95sxiPvy/bwVXP2FYfx0tQBzZ7fUimuy5C73W5XQyO+KO8T1VNPeVnblkofMmbWJRlTvtWAIOFFzxSHxfRJGvEfl7dUajLiemzTZXsDgjVpH3Od5Q0Tdep3soHSvLPh+B2N8KYenUXLQreUtxuovBcS5J1pSHBKUm+ZoEeLTKRgi0PuBLlw2+Uwje5xcBOCjEBfmWDAqoUIsXbf8ytP6MUVU6XZJe+C2/zQc0ZrIx6ct+7GMkFKVrZOKO6Ih6UcdFic8NyLLqLdd+zxAY/7XATBknMSbERRn0VLdUJ3Gy3VqlGvO+ZPviIm5owVMQ+6D2zzqONO1ejmXLanTNArVlct2Vs8A65zr+eNGw/XetwbmqbDQB1BTKwyHY/6s9Y6goRDXhYI/FZ/3eqHvSaw6lkHwnpQRpNn/aRs61/6qWh0O+JY0V112O/37t80/4/644YFUo47WrHUUlNr2m2G6pWkliqCE1JqXtri9t+134R3zJsyL+P8pgSXdOlyg912GDLkHx6teJpCr1bfoNdJgUCgYMVCg8L2TQtWFEoa48XkKt3gePQNklKlUUybtojwrcRysSCU0FofKvX+rw3X/JYEVxpoRxAUqvqd9fA+0WixtqkuokyU8Ter5s2YNGe6QRn/tbQBO+3Rb4c36ktmkaCyecka1WxJLiK36zFrtrRDqw75qooW2yDI1ziy8hStPmmX70d64naf8vNS+Qjkavq6uHPlkP2x30QYiw96RtZlD0WU5EEvCaR9MTIRE16qTN5S1lUh5gHTpfi+7OGaJnPIWGlt3XMRpSTlhB+VfZBVqLN4oDMscYF5gTt9QSBu3A9ctBx68aZI7wSVpv6af+qqE+nyh9Ipn9KMh0q/3tCJg+YEAis+H7F9r7QHi66ANdsjLHne172G1z0uj90hcQde8ZiCS77tFxEEKe1WyyY6LaHbTJ3Yv3zWA/5iBs1hQ9uh1xR+ptffvVCXzdCnNXzDcYd599ga7V4pmSjvM2EgbIZD5txWNtGiXPEF3QKdYaVsckPoyM2wV67YexQJLlg00oBgZ0XdvFkjDJt1oeyDZWm3ai26ZRNkvGBEhyvOeDOySSgjZdjJ6kboy2YMNThVs24DdtnW8Nv0FqfdXz21z6zRhhe/WhxxutaMTZ424Y73ZfuPmPRk/S0HveqUI4YbPDFbIWHQl4wbM7AxVf0Ze9inxU1IO2lCxllZ76EQ6f4mCYGk63XqttutRoxI+J3HTEYREHOTu9xl2I2SWuRknROzajriS7lbr0BKt4SYnHPSxvzVW5WvR3Q8pHTq1mNAyg49Al0VDUlRL2tG3qpJq2YtOOtCVAdytX+GNIWN8AYKW2bN/w//BXUGfIOyKQ9IAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAxLTA5VDAzOjU1OjU1KzA4OjAwK1ORbQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMS0wOVQwMzo1NTo1NSswODowMFoOKdEAAABDdEVYdHNvZnR3YXJlAC91c3IvbG9jYWwvaW1hZ2VtYWdpY2svc2hhcmUvZG9jL0ltYWdlTWFnaWNrLTcvL2luZGV4Lmh0bWy9tXkKAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICC8B55bAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGXRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxNTUzMMgZMgAAABh0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxNTUzJYHFKwAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTQ2OTc3MzU127tzlAAAABJ0RVh0VGh1bWI6OlNpemUANTYxODFCd0ZiEwAAAGJ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL2hvbWUvd3d3cm9vdC9uZXdzaXRlL3d3dy5lYXN5aWNvbi5uZXQvY2RuLWltZy5lYXN5aWNvbi5jbi9maWxlcy8xMTkvMTE5OTExMy5wbmeCJ466AAAAAElFTkSuQmCC"
+			},
+			"name": "Tools_CreateUuid_Api",
+			"responseDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "uuid",
+						"example": "e59d4de8-be75-41fc-8841-44d9862d6480",
+						"javaType": "String",
+						"name": "data",
+						"required": true
+					}
+				]
+			}
+		},
+		{
+			"comment": "工具 - 生成图片data url",
+			"ext": {
+				"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfjAQkDNzc2kB7UAAAFEElEQVRYw73YX2zdZRkH8M85bU/P6QpNu9p2bLTrOqAdhogyB5PoDXcjaGL0whhDDIl/SnAX6BBj4oWGcMEFGhKcGoOJMcZhUNCAGo1hg0pEMRHPKKVru3btOs422nXntD07Py/O6e/8+7VnWdDv1Xve93ne7/s+/97nd/gfI3aVci2aq34H1hSunaBdpx59+iUMahOzU4egQqtgzhIWnJU1bVHGeblGBHG3+LgDRvRJillzwZK4i85UbF9EqwEtAj1SWq3LOi1tzJi3K2UrCQZ8w314y7+lTcp414oVMXnrEfdMionpkNRnu72G7TPkimOeNF0v3u+ESYftlbxmj7YZ8YhTXjVYv/iEKR+95q0rsd+EpzVVT95sxiPvy/bwVXP2FYfx0tQBzZ7fUimuy5C73W5XQyO+KO8T1VNPeVnblkofMmbWJRlTvtWAIOFFzxSHxfRJGvEfl7dUajLiemzTZXsDgjVpH3Od5Q0Tdep3soHSvLPh+B2N8KYenUXLQreUtxuovBcS5J1pSHBKUm+ZoEeLTKRgi0PuBLlw2+Uwje5xcBOCjEBfmWDAqoUIsXbf8ytP6MUVU6XZJe+C2/zQc0ZrIx6ct+7GMkFKVrZOKO6Ih6UcdFic8NyLLqLdd+zxAY/7XATBknMSbERRn0VLdUJ3Gy3VqlGvO+ZPviIm5owVMQ+6D2zzqONO1ejmXLanTNArVlct2Vs8A65zr+eNGw/XetwbmqbDQB1BTKwyHY/6s9Y6goRDXhYI/FZ/3eqHvSaw6lkHwnpQRpNn/aRs61/6qWh0O+JY0V112O/37t80/4/644YFUo47WrHUUlNr2m2G6pWkliqCE1JqXtri9t+134R3zJsyL+P8pgSXdOlyg912GDLkHx6teJpCr1bfoNdJgUCgYMVCg8L2TQtWFEoa48XkKt3gePQNklKlUUybtojwrcRysSCU0FofKvX+rw3X/JYEVxpoRxAUqvqd9fA+0WixtqkuokyU8Ter5s2YNGe6QRn/tbQBO+3Rb4c36ktmkaCyecka1WxJLiK36zFrtrRDqw75qooW2yDI1ziy8hStPmmX70d64naf8vNS+Qjkavq6uHPlkP2x30QYiw96RtZlD0WU5EEvCaR9MTIRE16qTN5S1lUh5gHTpfi+7OGaJnPIWGlt3XMRpSTlhB+VfZBVqLN4oDMscYF5gTt9QSBu3A9ctBx68aZI7wSVpv6af+qqE+nyh9Ipn9KMh0q/3tCJg+YEAis+H7F9r7QHi66ANdsjLHne172G1z0uj90hcQde8ZiCS77tFxEEKe1WyyY6LaHbTJ3Yv3zWA/5iBs1hQ9uh1xR+ptffvVCXzdCnNXzDcYd599ga7V4pmSjvM2EgbIZD5txWNtGiXPEF3QKdYaVsckPoyM2wV67YexQJLlg00oBgZ0XdvFkjDJt1oeyDZWm3ai26ZRNkvGBEhyvOeDOySSgjZdjJ6kboy2YMNThVs24DdtnW8Nv0FqfdXz21z6zRhhe/WhxxutaMTZ424Y73ZfuPmPRk/S0HveqUI4YbPDFbIWHQl4wbM7AxVf0Ze9inxU1IO2lCxllZ76EQ6f4mCYGk63XqttutRoxI+J3HTEYREHOTu9xl2I2SWuRknROzajriS7lbr0BKt4SYnHPSxvzVW5WvR3Q8pHTq1mNAyg49Al0VDUlRL2tG3qpJq2YtOOtCVAdytX+GNIWN8AYKW2bN/w//BXUGfIOyKQ9IAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAxLTA5VDAzOjU1OjU1KzA4OjAwK1ORbQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMS0wOVQwMzo1NTo1NSswODowMFoOKdEAAABDdEVYdHNvZnR3YXJlAC91c3IvbG9jYWwvaW1hZ2VtYWdpY2svc2hhcmUvZG9jL0ltYWdlTWFnaWNrLTcvL2luZGV4Lmh0bWy9tXkKAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICC8B55bAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGXRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxNTUzMMgZMgAAABh0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxNTUzJYHFKwAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTQ2OTc3MzU127tzlAAAABJ0RVh0VGh1bWI6OlNpemUANTYxODFCd0ZiEwAAAGJ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL2hvbWUvd3d3cm9vdC9uZXdzaXRlL3d3dy5lYXN5aWNvbi5uZXQvY2RuLWltZy5lYXN5aWNvbi5jbi9maWxlcy8xMTkvMTE5OTExMy5wbmeCJ466AAAAAElFTkSuQmCC"
+			},
+			"name": "Tools_CreatePicDataUrl_Api",
+			"requestDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "图片url",
+						"example": "https://www.easyicon.net/download/png/1149253/48/",
+						"javaType": "String",
+						"name": "picUrl",
+						"required": true
+					}
+				]
+			},
+			"responseDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "图片DataUrl",
+						"example": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAQAAADTThCeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAHgAAAB4AJ31WmAAAAAHdElNRQfjAQkDDA5VJ3nkAAACLUlEQVRIx+2XsWsTURzHP5deBxW1kGIKjZIOVUSpKS7F1UWphbiogxRxcHAIiH+A4CaIo8VWujqoLVQqiCAourjoXGpNl9g2Go0N1MYkz+H05SV5d79LDjr5fRB+l9/3Pnf3fu/3uHPwk0uaDKcZIgGsk+MVc3ykSkdKM0se1TK+MEs6PCTGZT63Qf6NHFeIhcNkKftiFIoy2TCoSQHjoa5KmGOstJxUIU+eStsDjgRhXKaa7EVmyHCYYTJMU2zKPcT1B41SMKwrTODonMM4y0b2Kyf9Qdkm40Rb/iwbhuOm/4M9NmwPrJ77hmOeXrPYDe0iqeMKC1bQM7Z1fJA9dlAfCR3/IGcFfaKo43722UEOPTreYtMK+kXF8GMH0QSls0yorgmj/6DOQApljQnjaXRwLweMJe+SpL3UimTLGWv89g48a5xLnGOYlF6SVdapWkAuCY2qkWOZ5zyi4P0xxCJ1cVf0Hy85AtDPQgSIN14w0MM1rkeuXYoCvI98PwrFB4eSuRl0rS3HZ710rB1tkRIl2eQK+U3usYhinBvsD7YGV+O29t0SnIHJDY5r0FHWgrzBc1QzXqtq1Luf7AQX/jauw0UGoszRTyYBOM/3YKdU/r2cAmCEvmCjvI7qxm8kUEiFBYkdKYO8qu2WbFKLwBhjKM7I1yubbzlWfQPigmc7xpJ4T3ERA0sxnsqlFaV4AoO8jrxjv2EQ4ARvI2HeNT50DnGH1a4gq9wlBfAHdW/urxr14OcAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDEtMDlUMDM6MTI6MTQrMDg6MDBba/zYAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAxLTA5VDAzOjEyOjE0KzA4OjAwKjZEZAAAAEN0RVh0c29mdHdhcmUAL3Vzci9sb2NhbC9pbWFnZW1hZ2ljay9zaGFyZS9kb2MvSW1hZ2VNYWdpY2stNy8vaW5kZXguaHRtbL21eQoAAABjdEVYdHN2Zzpjb21tZW50ACBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIHILdZYAAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAYdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADg1M5Q+NUAAAAAXdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgANjQyY01JwAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTQ2OTc0NzM071rjtgAAABJ0RVh0VGh1bWI6OlNpemUAMTE1OTNC4mFj9wAAAGJ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL2hvbWUvd3d3cm9vdC9uZXdzaXRlL3d3dy5lYXN5aWNvbi5uZXQvY2RuLWltZy5lYXN5aWNvbi5jbi9maWxlcy8xMTQvMTE0OTI1My5wbmeePVEYAAAAAElFTkSuQmCC",
+						"javaType": "String",
+						"name": "data",
+						"required": true
+					}
+				]
+			}
+		},
+		{
+			"comment": "工具 - 通过aria2下载文件到指定文件夹",
+			"ext": {
+				"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfjAQkDNzc2kB7UAAAFEElEQVRYw73YX2zdZRkH8M85bU/P6QpNu9p2bLTrOqAdhogyB5PoDXcjaGL0whhDDIl/SnAX6BBj4oWGcMEFGhKcGoOJMcZhUNCAGo1hg0pEMRHPKKVru3btOs422nXntD07Py/O6e/8+7VnWdDv1Xve93ne7/s+/97nd/gfI3aVci2aq34H1hSunaBdpx59+iUMahOzU4egQqtgzhIWnJU1bVHGeblGBHG3+LgDRvRJillzwZK4i85UbF9EqwEtAj1SWq3LOi1tzJi3K2UrCQZ8w314y7+lTcp414oVMXnrEfdMionpkNRnu72G7TPkimOeNF0v3u+ESYftlbxmj7YZ8YhTXjVYv/iEKR+95q0rsd+EpzVVT95sxiPvy/bwVXP2FYfx0tQBzZ7fUimuy5C73W5XQyO+KO8T1VNPeVnblkofMmbWJRlTvtWAIOFFzxSHxfRJGvEfl7dUajLiemzTZXsDgjVpH3Od5Q0Tdep3soHSvLPh+B2N8KYenUXLQreUtxuovBcS5J1pSHBKUm+ZoEeLTKRgi0PuBLlw2+Uwje5xcBOCjEBfmWDAqoUIsXbf8ytP6MUVU6XZJe+C2/zQc0ZrIx6ct+7GMkFKVrZOKO6Ih6UcdFic8NyLLqLdd+zxAY/7XATBknMSbERRn0VLdUJ3Gy3VqlGvO+ZPviIm5owVMQ+6D2zzqONO1ejmXLanTNArVlct2Vs8A65zr+eNGw/XetwbmqbDQB1BTKwyHY/6s9Y6goRDXhYI/FZ/3eqHvSaw6lkHwnpQRpNn/aRs61/6qWh0O+JY0V112O/37t80/4/644YFUo47WrHUUlNr2m2G6pWkliqCE1JqXtri9t+134R3zJsyL+P8pgSXdOlyg912GDLkHx6teJpCr1bfoNdJgUCgYMVCg8L2TQtWFEoa48XkKt3gePQNklKlUUybtojwrcRysSCU0FofKvX+rw3X/JYEVxpoRxAUqvqd9fA+0WixtqkuokyU8Ter5s2YNGe6QRn/tbQBO+3Rb4c36ktmkaCyecka1WxJLiK36zFrtrRDqw75qooW2yDI1ziy8hStPmmX70d64naf8vNS+Qjkavq6uHPlkP2x30QYiw96RtZlD0WU5EEvCaR9MTIRE16qTN5S1lUh5gHTpfi+7OGaJnPIWGlt3XMRpSTlhB+VfZBVqLN4oDMscYF5gTt9QSBu3A9ctBx68aZI7wSVpv6af+qqE+nyh9Ipn9KMh0q/3tCJg+YEAis+H7F9r7QHi66ANdsjLHne172G1z0uj90hcQde8ZiCS77tFxEEKe1WyyY6LaHbTJ3Yv3zWA/5iBs1hQ9uh1xR+ptffvVCXzdCnNXzDcYd599ga7V4pmSjvM2EgbIZD5txWNtGiXPEF3QKdYaVsckPoyM2wV67YexQJLlg00oBgZ0XdvFkjDJt1oeyDZWm3ai26ZRNkvGBEhyvOeDOySSgjZdjJ6kboy2YMNThVs24DdtnW8Nv0FqfdXz21z6zRhhe/WhxxutaMTZ424Y73ZfuPmPRk/S0HveqUI4YbPDFbIWHQl4wbM7AxVf0Ze9inxU1IO2lCxllZ76EQ6f4mCYGk63XqttutRoxI+J3HTEYREHOTu9xl2I2SWuRknROzajriS7lbr0BKt4SYnHPSxvzVW5WvR3Q8pHTq1mNAyg49Al0VDUlRL2tG3qpJq2YtOOtCVAdytX+GNIWN8AYKW2bN/w//BXUGfIOyKQ9IAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAxLTA5VDAzOjU1OjU1KzA4OjAwK1ORbQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMS0wOVQwMzo1NTo1NSswODowMFoOKdEAAABDdEVYdHNvZnR3YXJlAC91c3IvbG9jYWwvaW1hZ2VtYWdpY2svc2hhcmUvZG9jL0ltYWdlTWFnaWNrLTcvL2luZGV4Lmh0bWy9tXkKAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICC8B55bAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGXRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxNTUzMMgZMgAAABh0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxNTUzJYHFKwAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTQ2OTc3MzU127tzlAAAABJ0RVh0VGh1bWI6OlNpemUANTYxODFCd0ZiEwAAAGJ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL2hvbWUvd3d3cm9vdC9uZXdzaXRlL3d3dy5lYXN5aWNvbi5uZXQvY2RuLWltZy5lYXN5aWNvbi5jbi9maWxlcy8xMTkvMTE5OTExMy5wbmeCJ466AAAAAElFTkSuQmCC"
+			},
+			"name": "Tools_DownloadFileByAria2_Api",
+			"requestDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "aria2c path",
+						"example": "/usr/local/bin/",
+						"javaType": "String",
+						"name": "aria2cPath",
+						"required": false
+					},
+					{
+						"comment": "文件url",
+						"example": "https://www.easyicon.net/download/png/1149253/48/",
+						"javaType": "String",
+						"name": "url",
+						"required": true
+					},
+					{
+						"comment": "文件夹",
+						"example": "/Users/xuzewei/Downloads/",
+						"javaType": "String",
+						"name": "dir",
+						"required": false
+					}
+				]
+			},
+			"responseDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "文件名",
+						"example": "/Users/xuzewei/Downloads/lock_36.126611957796px_1149253_easyicon.net.png",
+						"javaType": "String",
+						"name": "data",
+						"required": true
+					}
+				]
+			}
+		},
+		{
+			"comment": "工具 - 通过maven坐标查询java类库的最新版本",
+			"ext": {
+				"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfjAQkDNzc2kB7UAAAFEElEQVRYw73YX2zdZRkH8M85bU/P6QpNu9p2bLTrOqAdhogyB5PoDXcjaGL0whhDDIl/SnAX6BBj4oWGcMEFGhKcGoOJMcZhUNCAGo1hg0pEMRHPKKVru3btOs422nXntD07Py/O6e/8+7VnWdDv1Xve93ne7/s+/97nd/gfI3aVci2aq34H1hSunaBdpx59+iUMahOzU4egQqtgzhIWnJU1bVHGeblGBHG3+LgDRvRJillzwZK4i85UbF9EqwEtAj1SWq3LOi1tzJi3K2UrCQZ8w314y7+lTcp414oVMXnrEfdMionpkNRnu72G7TPkimOeNF0v3u+ESYftlbxmj7YZ8YhTXjVYv/iEKR+95q0rsd+EpzVVT95sxiPvy/bwVXP2FYfx0tQBzZ7fUimuy5C73W5XQyO+KO8T1VNPeVnblkofMmbWJRlTvtWAIOFFzxSHxfRJGvEfl7dUajLiemzTZXsDgjVpH3Od5Q0Tdep3soHSvLPh+B2N8KYenUXLQreUtxuovBcS5J1pSHBKUm+ZoEeLTKRgi0PuBLlw2+Uwje5xcBOCjEBfmWDAqoUIsXbf8ytP6MUVU6XZJe+C2/zQc0ZrIx6ct+7GMkFKVrZOKO6Ih6UcdFic8NyLLqLdd+zxAY/7XATBknMSbERRn0VLdUJ3Gy3VqlGvO+ZPviIm5owVMQ+6D2zzqONO1ejmXLanTNArVlct2Vs8A65zr+eNGw/XetwbmqbDQB1BTKwyHY/6s9Y6goRDXhYI/FZ/3eqHvSaw6lkHwnpQRpNn/aRs61/6qWh0O+JY0V112O/37t80/4/644YFUo47WrHUUlNr2m2G6pWkliqCE1JqXtri9t+134R3zJsyL+P8pgSXdOlyg912GDLkHx6teJpCr1bfoNdJgUCgYMVCg8L2TQtWFEoa48XkKt3gePQNklKlUUybtojwrcRysSCU0FofKvX+rw3X/JYEVxpoRxAUqvqd9fA+0WixtqkuokyU8Ter5s2YNGe6QRn/tbQBO+3Rb4c36ktmkaCyecka1WxJLiK36zFrtrRDqw75qooW2yDI1ziy8hStPmmX70d64naf8vNS+Qjkavq6uHPlkP2x30QYiw96RtZlD0WU5EEvCaR9MTIRE16qTN5S1lUh5gHTpfi+7OGaJnPIWGlt3XMRpSTlhB+VfZBVqLN4oDMscYF5gTt9QSBu3A9ctBx68aZI7wSVpv6af+qqE+nyh9Ipn9KMh0q/3tCJg+YEAis+H7F9r7QHi66ANdsjLHne172G1z0uj90hcQde8ZiCS77tFxEEKe1WyyY6LaHbTJ3Yv3zWA/5iBs1hQ9uh1xR+ptffvVCXzdCnNXzDcYd599ga7V4pmSjvM2EgbIZD5txWNtGiXPEF3QKdYaVsckPoyM2wV67YexQJLlg00oBgZ0XdvFkjDJt1oeyDZWm3ai26ZRNkvGBEhyvOeDOySSgjZdjJ6kboy2YMNThVs24DdtnW8Nv0FqfdXz21z6zRhhe/WhxxutaMTZ424Y73ZfuPmPRk/S0HveqUI4YbPDFbIWHQl4wbM7AxVf0Ze9inxU1IO2lCxllZ76EQ6f4mCYGk63XqttutRoxI+J3HTEYREHOTu9xl2I2SWuRknROzajriS7lbr0BKt4SYnHPSxvzVW5WvR3Q8pHTq1mNAyg49Al0VDUlRL2tG3qpJq2YtOOtCVAdytX+GNIWN8AYKW2bN/w//BXUGfIOyKQ9IAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAxLTA5VDAzOjU1OjU1KzA4OjAwK1ORbQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMS0wOVQwMzo1NTo1NSswODowMFoOKdEAAABDdEVYdHNvZnR3YXJlAC91c3IvbG9jYWwvaW1hZ2VtYWdpY2svc2hhcmUvZG9jL0ltYWdlTWFnaWNrLTcvL2luZGV4Lmh0bWy9tXkKAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICC8B55bAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGXRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxNTUzMMgZMgAAABh0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxNTUzJYHFKwAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTQ2OTc3MzU127tzlAAAABJ0RVh0VGh1bWI6OlNpemUANTYxODFCd0ZiEwAAAGJ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL2hvbWUvd3d3cm9vdC9uZXdzaXRlL3d3dy5lYXN5aWNvbi5uZXQvY2RuLWltZy5lYXN5aWNvbi5jbi9maWxlcy8xMTkvMTE5OTExMy5wbmeCJ466AAAAAElFTkSuQmCC"
+			},
+			"name": "Tools_QueryLatestVersionByMavenCoordinate_Api",
+			"requestDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "组名",
+						"example": "com.alibab",
+						"javaType": "String",
+						"name": "groupId",
+						"required": true
+					},
+					{
+						"comment": "类库名",
+						"example": "fastjson",
+						"javaType": "String",
+						"name": "artifactId",
+						"required": true
+					}
+				]
+			},
+			"responseDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "最新版本",
+						"example": "1.2.56",
+						"javaType": "String",
+						"name": "data",
+						"required": true
+					}
+				]
+			}
+		},
+		{
+			"comment": "工具 - 通过bash执行命令",
+			"ext": {
+				"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfjAQkDNzc2kB7UAAAFEElEQVRYw73YX2zdZRkH8M85bU/P6QpNu9p2bLTrOqAdhogyB5PoDXcjaGL0whhDDIl/SnAX6BBj4oWGcMEFGhKcGoOJMcZhUNCAGo1hg0pEMRHPKKVru3btOs422nXntD07Py/O6e/8+7VnWdDv1Xve93ne7/s+/97nd/gfI3aVci2aq34H1hSunaBdpx59+iUMahOzU4egQqtgzhIWnJU1bVHGeblGBHG3+LgDRvRJillzwZK4i85UbF9EqwEtAj1SWq3LOi1tzJi3K2UrCQZ8w314y7+lTcp414oVMXnrEfdMionpkNRnu72G7TPkimOeNF0v3u+ESYftlbxmj7YZ8YhTXjVYv/iEKR+95q0rsd+EpzVVT95sxiPvy/bwVXP2FYfx0tQBzZ7fUimuy5C73W5XQyO+KO8T1VNPeVnblkofMmbWJRlTvtWAIOFFzxSHxfRJGvEfl7dUajLiemzTZXsDgjVpH3Od5Q0Tdep3soHSvLPh+B2N8KYenUXLQreUtxuovBcS5J1pSHBKUm+ZoEeLTKRgi0PuBLlw2+Uwje5xcBOCjEBfmWDAqoUIsXbf8ytP6MUVU6XZJe+C2/zQc0ZrIx6ct+7GMkFKVrZOKO6Ih6UcdFic8NyLLqLdd+zxAY/7XATBknMSbERRn0VLdUJ3Gy3VqlGvO+ZPviIm5owVMQ+6D2zzqONO1ejmXLanTNArVlct2Vs8A65zr+eNGw/XetwbmqbDQB1BTKwyHY/6s9Y6goRDXhYI/FZ/3eqHvSaw6lkHwnpQRpNn/aRs61/6qWh0O+JY0V112O/37t80/4/644YFUo47WrHUUlNr2m2G6pWkliqCE1JqXtri9t+134R3zJsyL+P8pgSXdOlyg912GDLkHx6teJpCr1bfoNdJgUCgYMVCg8L2TQtWFEoa48XkKt3gePQNklKlUUybtojwrcRysSCU0FofKvX+rw3X/JYEVxpoRxAUqvqd9fA+0WixtqkuokyU8Ter5s2YNGe6QRn/tbQBO+3Rb4c36ktmkaCyecka1WxJLiK36zFrtrRDqw75qooW2yDI1ziy8hStPmmX70d64naf8vNS+Qjkavq6uHPlkP2x30QYiw96RtZlD0WU5EEvCaR9MTIRE16qTN5S1lUh5gHTpfi+7OGaJnPIWGlt3XMRpSTlhB+VfZBVqLN4oDMscYF5gTt9QSBu3A9ctBx68aZI7wSVpv6af+qqE+nyh9Ipn9KMh0q/3tCJg+YEAis+H7F9r7QHi66ANdsjLHne172G1z0uj90hcQde8ZiCS77tFxEEKe1WyyY6LaHbTJ3Yv3zWA/5iBs1hQ9uh1xR+ptffvVCXzdCnNXzDcYd599ga7V4pmSjvM2EgbIZD5txWNtGiXPEF3QKdYaVsckPoyM2wV67YexQJLlg00oBgZ0XdvFkjDJt1oeyDZWm3ai26ZRNkvGBEhyvOeDOySSgjZdjJ6kboy2YMNThVs24DdtnW8Nv0FqfdXz21z6zRhhe/WhxxutaMTZ424Y73ZfuPmPRk/S0HveqUI4YbPDFbIWHQl4wbM7AxVf0Ze9inxU1IO2lCxllZ76EQ6f4mCYGk63XqttutRoxI+J3HTEYREHOTu9xl2I2SWuRknROzajriS7lbr0BKt4SYnHPSxvzVW5WvR3Q8pHTq1mNAyg49Al0VDUlRL2tG3qpJq2YtOOtCVAdytX+GNIWN8AYKW2bN/w//BXUGfIOyKQ9IAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAxLTA5VDAzOjU1OjU1KzA4OjAwK1ORbQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMS0wOVQwMzo1NTo1NSswODowMFoOKdEAAABDdEVYdHNvZnR3YXJlAC91c3IvbG9jYWwvaW1hZ2VtYWdpY2svc2hhcmUvZG9jL0ltYWdlTWFnaWNrLTcvL2luZGV4Lmh0bWy9tXkKAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICC8B55bAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGXRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxNTUzMMgZMgAAABh0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxNTUzJYHFKwAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTQ2OTc3MzU127tzlAAAABJ0RVh0VGh1bWI6OlNpemUANTYxODFCd0ZiEwAAAGJ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL2hvbWUvd3d3cm9vdC9uZXdzaXRlL3d3dy5lYXN5aWNvbi5uZXQvY2RuLWltZy5lYXN5aWNvbi5jbi9maWxlcy8xMTkvMTE5OTExMy5wbmeCJ466AAAAAElFTkSuQmCC"
+			},
+			"name": "Tools_ExecuteCommandByBash_Api",
+			"requestDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "path环境变量",
+						"example": "/usr/local/opt/ruby@2.3/bin:/Users/xuzewei/java/script:/Users/xuzewei/Library/Android/sdk/platform-tools:/Users/xuzewei/Library/Android/sdk/tools:/Users/xuzewei/java/zookeeper-3.4.9/bin:/usr/local/mysql/bin:/Users/xuzewei/java/apache-maven-3.3.9/bin:/Library/Frameworks/Mono.framework/Versions/5.10.1/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands",
+						"javaType": "String",
+						"name": "pathEnvironment",
+						"required": false
+					},
+					{
+						"comment": "工作目录",
+						"example": "/Users/xuzewei/Downloads",
+						"javaType": "String",
+						"name": "directory",
+						"required": false
+					},
+					{
+						"comment": "时间限制（秒）",
+						"example": "5",
+						"javaType": "Integer",
+						"name": "timeLimit",
+						"required": false
+					},
+					{
+						"comment": "成功的退出码",
+						"example": "0",
+						"javaType": "Integer",
+						"name": "successfulExitCode",
+						"required": false
+					},
+					{
+						"comment": "命令",
+						"example": "aria2c https://www.easyicon.net/download/png/1149253/48/",
+						"javaType": "String",
+						"name": "command",
+						"required": true
+					}
+				]
+			},
+			"responseDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "退出码",
+						"example": null,
+						"javaType": "Integer",
+						"name": "exitCode",
+						"required": true
+					},
+					{
+						"comment": "命令输出",
+						"example": null,
+						"javaType": "String",
+						"name": "commandOutput",
+						"required": true
+					}
+				]
+			}
+		}
+	],
+	"comment": "ziran-api-server",
+	"description": "小提示：利用浏览器搜索功能Ctrl+F可快速定位API接口。每个接口都已定义快速跳转书签，点击超链接即可跳转。",
+	"errorCodeDefinitions": [
+		{
+			"code": 1010,
+			"message": "Token已失效，请重新登录",
+			"name": "invalid_token"
+		},
+		{
+			"code": 1011,
+			"message": "密码错误",
+			"name": "invalid_password"
+		}
+	],
+	"javaPackageName": "com.github.ziran_ink.ziran_api_server",
+	"mixinDefinitions": [],
+	"modelDefinitions": [],
+	"serverAddressDefinition": {
+		"host": "ziran.ink",
+		"port": 8607,
+		"url": ""
+	},
+	"showdocDefinition": {
+		"apiKey": "753124a98a1a7397e4c9a758e13012f5837031751",
+		"apiToken": "bcdef1292a0a112a5f40a36d757d7887635649179",
+		"url": "https://www.showdoc.cc/server/api/item/updateByApi"
+	},
+	"version": "v0.0.3"
+}
