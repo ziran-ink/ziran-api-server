@@ -15,7 +15,7 @@ import eu.maxschuster.dataurl.DataUrlBuilder;
 import eu.maxschuster.dataurl.DataUrlEncoding;
 import eu.maxschuster.dataurl.DataUrlSerializer;
 
-@MicroApi(comment = "工具 - 生成图片data url", version = "v0.0.3")
+@MicroApi(comment = "工具 - 生成图片data url", version = "v0.0.4")
 public class Tools_CreatePicDataUrl_Api {
 
     public static void main(String[] args) throws Exception {

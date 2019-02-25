@@ -14,7 +14,7 @@ import com.github.ziran_ink.command.Command;
 import com.github.ziran_ink.command.CommandResult;
 import io.airlift.concurrent.Threads;
 
-@MicroApi(comment = "工具 - 通过bash执行命令", version = "v0.0.3")
+@MicroApi(comment = "工具 - 通过bash执行命令", version = "v0.0.4")
 public class Tools_ExecuteCommandByBash_Api {
 
     private static final ExecutorService executor = Executors.newCachedThreadPool(Threads.daemonThreadsNamed("process-input-reader-%s"));

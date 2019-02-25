@@ -9,7 +9,7 @@ import com.github.microprograms.micro_api_runtime.utils.MicroApiUtils;
 import com.github.microprograms.micro_nested_data_model_runtime.Comment;
 import com.github.microprograms.micro_nested_data_model_runtime.Required;
 
-@MicroApi(comment = "工具 - 通过aria2下载文件到指定文件夹", version = "v0.0.3")
+@MicroApi(comment = "工具 - 通过aria2下载文件到指定文件夹", version = "v0.0.4")
 public class Tools_DownloadFileByAria2_Api {
 
     private static final String default_aria2cPath = "/usr/local/bin/";
