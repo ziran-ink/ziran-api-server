@@ -6,7 +6,7 @@
 
 	<groupId>com.github.ziran-ink</groupId>
 	<artifactId>ziran-api-server</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.3</version>
 	<packaging>jar</packaging>
 
 	<name>ziran-api-server</name>
@@ -146,9 +146,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.github.microprograms</groupId>
-			<artifactId>micro-http-server-runtime</artifactId>
-			<version>3.0.0</version>
+			<groupId>com.github.ziran-ink</groupId>
+			<artifactId>ziran-api-designer</artifactId>
+			<version>1.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.ziran-ink</groupId>
@@ -157,8 +157,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.github.microprograms</groupId>
-			<artifactId>micro-api-runtime</artifactId>
-			<version>2.0.0</version>
+			<artifactId>micro-http-server-runtime</artifactId>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>

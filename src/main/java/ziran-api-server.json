@@ -256,7 +256,7 @@
 	"mixinDefinitions": [],
 	"modelDefinitions": [],
 	"serverAddressDefinition": {
-		"host": "ziran.ink",
+		"host": "api.ziran.ink",
 		"port": 8607,
 		"url": ""
 	},
