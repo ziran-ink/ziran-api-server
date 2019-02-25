@@ -1,0 +1,1 @@
+java -jar target/lib/ziran-api-designer-1.0.7.jar gen-scratch-vm-extension -DapiServerConfigFilePath=src/main/java/ziran-api-server.json -DscratchVmExtensionFilePath=/Users/xuzewei/ziran/scratch/scratch-vm/src/extensions/scratch3_ziran/index.js
