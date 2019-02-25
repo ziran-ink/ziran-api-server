@@ -4,7 +4,7 @@
   <groupId>com.github.ziran-ink</groupId>
   <artifactId>ziran-api-server</artifactId>
   <name>ziran-api-server</name>
-  <version>1.0.3</version>
+  <version>1.0.5</version>
   <url>https://github.com/ziran-ink/ziran-api-server</url>
   <build>
     <resources>
@@ -27,6 +27,7 @@
         </includes>
       </resource>
     </resources>
+    <finalName>${project.name}</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
