@@ -9,7 +9,7 @@ import com.github.microprograms.micro_api_runtime.utils.MicroApiUtils;
 import com.github.microprograms.micro_nested_data_model_runtime.Comment;
 import com.github.microprograms.micro_nested_data_model_runtime.Required;
 
-@MicroApi(comment = "工具 - 通过maven坐标查询java类库的最新版本", version = "v0.0.4")
+@MicroApi(comment = "工具 - 通过maven坐标查询java类库的最新版本", version = "v0.0.5")
 public class Tools_QueryLatestVersionByMavenCoordinate_Api {
 
     private static void core(Req req, Resp resp) throws Exception {

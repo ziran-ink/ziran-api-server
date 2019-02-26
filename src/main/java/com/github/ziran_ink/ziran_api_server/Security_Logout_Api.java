@@ -8,7 +8,7 @@ import com.github.microprograms.micro_nested_data_model_runtime.Comment;
 import com.github.microprograms.micro_nested_data_model_runtime.Required;
 import com.github.ziran_ink.ziran_api_server.utils.Tokens;
 
-@MicroApi(comment = "安全 - 退出", version = "v0.0.4")
+@MicroApi(comment = "安全 - 退出", version = "v0.0.5")
 public class Security_Logout_Api {
 
     private static void core(Req req, Response resp) throws Exception {

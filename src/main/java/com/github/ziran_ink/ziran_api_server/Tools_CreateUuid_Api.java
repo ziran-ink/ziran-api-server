@@ -7,7 +7,7 @@ import com.github.microprograms.micro_api_runtime.model.Response;
 import com.github.microprograms.micro_nested_data_model_runtime.Comment;
 import com.github.microprograms.micro_nested_data_model_runtime.Required;
 
-@MicroApi(comment = "工具 - 生成uuid", version = "v0.0.4")
+@MicroApi(comment = "工具 - 生成uuid", version = "v0.0.5")
 public class Tools_CreateUuid_Api {
 
     private static void core(Request req, Resp resp) throws Exception {

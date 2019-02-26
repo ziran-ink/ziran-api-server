@@ -5,11 +5,11 @@ import java.util.Map;
 import java.util.UUID;
 
 public class Tokens {
-	private static final Map<String, Long> map = new HashMap<>();
+	private static final Map<String, Map<String, Object>> map = new HashMap<>();
 
 	public static String createToken() {
 		String token = UUID.randomUUID().toString();
-		map.put(token, System.currentTimeMillis());
+		map.put(token, new HashMap<>());
 		return token;
 	}
 
@@ -19,5 +19,18 @@ public class Tokens {
 
 	public static void removeToken(String token) {
 		map.remove(token);
+	}
+
+	public static Map<String, Object> getTokenContext(String token) {
+		return map.get(token);
+	}
+
+	public static void setTokenProp(String token, String prop, Object value) {
+		getTokenContext(token).put(prop, value);
+	}
+
+	@SuppressWarnings("unchecked")
+	public static <T> T getTokenProp(String token, String prop) {
+		return (T) getTokenContext(token).get(prop);
 	}
 }

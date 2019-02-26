@@ -9,7 +9,7 @@ import com.github.microprograms.micro_nested_data_model_runtime.Comment;
 import com.github.microprograms.micro_nested_data_model_runtime.Required;
 import com.github.ziran_ink.ziran_api_server.utils.Tokens;
 
-@MicroApi(comment = "安全 - 登录", version = "v0.0.4")
+@MicroApi(comment = "安全 - 登录", version = "v0.0.5")
 public class Security_Login_Api {
 
     private static void core(Req req, Resp resp) throws Exception {
@@ -21,6 +21,7 @@ public class Security_Login_Api {
 
     public static Response execute(Request request) throws Exception {
         Req req = (Req) request;
+        MicroApiUtils.throwExceptionIfBlank(req.getUsername(), "username");
         MicroApiUtils.throwExceptionIfBlank(req.getPassword(), "password");
         Resp resp = new Resp();
         core(req, resp);
@@ -29,7 +30,19 @@ public class Security_Login_Api {
 
     public static class Req extends Request {
 
-        @Comment(value = "密码")
+        @Comment(value = "用户名")
+        @Required(value = true)
+        private String username;
+
+        public String getUsername() {
+            return username;
+        }
+
+        public void setUsername(String username) {
+            this.username = username;
+        }
+
+        @Comment(value = "密码（pass123）")
         @Required(value = true)
         private String password;
 
