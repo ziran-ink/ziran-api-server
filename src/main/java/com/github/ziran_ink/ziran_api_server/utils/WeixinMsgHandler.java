@@ -1,20 +1,13 @@
 package com.github.ziran_ink.ziran_api_server.utils;
 
-import com.github.ziran_ink.itchat4j.beans.BaseMsg;
-import com.github.ziran_ink.itchat4j.face.IMsgHandlerFace;
+import com.github.ziran_ink.web_weixin_sdk.beans.BaseMsg;
+import com.github.ziran_ink.web_weixin_sdk.core.MsgHandler;
 
-public class WeixinMsgHandler implements IMsgHandlerFace {
+public class WeixinMsgHandler implements MsgHandler {
 
 	@Override
 	public String textMsgHandle(BaseMsg msg) {
-//		MessageTools.sendMsgByNickName("逍遥津", "逍遥津");
-
-//		try {
-//			FileWriter w = new FileWriter("/Users/xuzewei/Downloads/getContactList.txt");
-//			w.write(JSON.toJSONString(Core.getInstance().getContactList()));
-//			w.close();
-//		}catch (Exception e) {
-//		}
+		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -59,5 +52,4 @@ public class WeixinMsgHandler implements IMsgHandlerFace {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }
