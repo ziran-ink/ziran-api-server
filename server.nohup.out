@@ -3,34 +3,36 @@ SLF4J: Found binding in [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/tar
 SLF4J: Found binding in [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/lib/ziran-api-designer-1.0.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: Found binding in [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/lib/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-17:37:45,844 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-17:37:45,845 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-17:37:45,846 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml]
-17:37:45,849 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
-17:37:45,849 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml]
-17:37:45,850 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/lib/ziran-api-designer-1.0.7.jar!/logback.xml]
-17:37:45,876 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@224aed64 - URL [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml] is not of type file
-17:37:45,931 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-17:37:45,931 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-17:37:45,939 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
-17:37:45,946 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-17:37:46,003 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
-17:37:46,003 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
-17:37:46,004 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-17:37:46,005 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@c39f790 - Registering current configuration as safe fallback point
+17:53:57,282 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+17:53:57,282 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+17:53:57,282 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml]
+17:53:57,282 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+17:53:57,283 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml]
+17:53:57,283 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/lib/ziran-api-designer-1.0.7.jar!/logback.xml]
+17:53:57,303 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@66048bfd - URL [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml] is not of type file
+17:53:57,352 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:53:57,352 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:53:57,361 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+17:53:57,368 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:53:57,419 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+17:53:57,419 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+17:53:57,420 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:53:57,421 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@61443d8f - Registering current configuration as safe fallback point
 
 SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
-17:37:47.003 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Api_QueryVersion_Api, class=com.github.ziran_ink.ziran_api_server.Api_QueryVersion_Api
-17:37:47.006 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Security_Login_Api, class=com.github.ziran_ink.ziran_api_server.Security_Login_Api
-17:37:47.007 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Security_Logout_Api, class=com.github.ziran_ink.ziran_api_server.Security_Logout_Api
-17:37:47.008 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_CreatePicDataUrl_Api, class=com.github.ziran_ink.ziran_api_server.Tools_CreatePicDataUrl_Api
-17:37:47.008 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_CreateUuid_Api, class=com.github.ziran_ink.ziran_api_server.Tools_CreateUuid_Api
-17:37:47.009 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_DownloadFileByAria2_Api, class=com.github.ziran_ink.ziran_api_server.Tools_DownloadFileByAria2_Api
-17:37:47.009 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_ExecuteCommandByBash_Api, class=com.github.ziran_ink.ziran_api_server.Tools_ExecuteCommandByBash_Api
-17:37:47.010 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_QueryLatestVersionByMavenCoordinate_Api, class=com.github.ziran_ink.ziran_api_server.Tools_QueryLatestVersionByMavenCoordinate_Api
-17:37:47.010 [main] INFO  c.g.m.m.MicroHttpServer - ssl
-17:37:47.035 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1404ms to org.eclipse.jetty.util.log.Slf4jLog
-17:37:47.172 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.z-SNAPSHOT; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_111-b14
-17:37:47.255 [main] INFO  o.e.jetty.util.ssl.SslContextFactory - x509=X509@536aaa8d(alias,h=[api.ziran.ink],w=[]) for SslContextFactory@e320068[provider=null,keyStore=file:///Users/xuzewei/ziran/java/ziran-api-server/src/main/java/api.ziran.ink.jks,trustStore=null]
-17:37:47.482 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@101fe232{SSL,[ssl, http/1.1]}{0.0.0.0:8607}
-17:37:47.482 [main] INFO  org.eclipse.jetty.server.Server - Started @1856ms
+17:53:58.296 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Api_QueryVersion_Api, class=com.github.ziran_ink.ziran_api_server.Api_QueryVersion_Api
+17:53:58.300 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Security_Login_Api, class=com.github.ziran_ink.ziran_api_server.Security_Login_Api
+17:53:58.301 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Security_Logout_Api, class=com.github.ziran_ink.ziran_api_server.Security_Logout_Api
+17:53:58.302 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_CreatePicDataUrl_Api, class=com.github.ziran_ink.ziran_api_server.Tools_CreatePicDataUrl_Api
+17:53:58.303 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_CreateUuid_Api, class=com.github.ziran_ink.ziran_api_server.Tools_CreateUuid_Api
+17:53:58.304 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_DownloadFileByAria2_Api, class=com.github.ziran_ink.ziran_api_server.Tools_DownloadFileByAria2_Api
+17:53:58.305 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_ExecuteCommandByBash_Api, class=com.github.ziran_ink.ziran_api_server.Tools_ExecuteCommandByBash_Api
+17:53:58.306 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_QueryLatestVersionByMavenCoordinate_Api, class=com.github.ziran_ink.ziran_api_server.Tools_QueryLatestVersionByMavenCoordinate_Api
+17:53:58.306 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Weixin_LoadLoginQrCode_Api, class=com.github.ziran_ink.ziran_api_server.Weixin_LoadLoginQrCode_Api
+17:53:58.307 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Weixin_SendMsg_Api, class=com.github.ziran_ink.ziran_api_server.Weixin_SendMsg_Api
+17:53:58.307 [main] INFO  c.g.m.m.MicroHttpServer - ssl
+17:53:58.336 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1219ms to org.eclipse.jetty.util.log.Slf4jLog
+17:53:58.526 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.z-SNAPSHOT; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_111-b14
+17:53:58.608 [main] INFO  o.e.jetty.util.ssl.SslContextFactory - x509=X509@480bdb19(alias,h=[api.ziran.ink],w=[]) for SslContextFactory@2a556333[provider=null,keyStore=file:///Users/xuzewei/ziran/java/ziran-api-server/src/main/java/api.ziran.ink.jks,trustStore=null]
+17:53:58.871 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@197d671{SSL,[ssl, http/1.1]}{0.0.0.0:8607}
+17:53:58.871 [main] INFO  org.eclipse.jetty.server.Server - Started @1759ms
