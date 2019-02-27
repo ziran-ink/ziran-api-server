@@ -268,6 +268,17 @@
 				"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAadQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZO2PqwAAAIx0Uk5TABVWf5OnpZJ9ShENb9D+xmQF8O1sBCnLIjPuQC/yMAbTlovrsYPlEi5ChAjjB/MCGk3C+yFUA47KH/l4oPr28fi8flXIx1FGhqi/ybSeZyTXlfXMKKwWwFJw4h2a/EsMdGUKXbrolwHZK5CAiN410iDfJk/9nNqYw/S+CVxgWM46MkX33V6KD2tuEE5WqnK1AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAASAAAAEgARslrPgAAAeFJREFUSMftlFdXAjEQhYOgoiIq2Av2roiVFUUUuyIqInYQO/beey/50a5ZzIYlQXzwzXsOh8nM/SCzkw0A//pzySLkisioaGVMbDjuOFW8GvqlTkiM+8GepNTAAGmTU0L5U9NgkOLT2f6MTEiRNovlz6b6IczR0f25eaisyS8o9PdcVCxssaSUCsgFVxkA5QJQAUBlFYoUNH+1FtX0NQAYBKCWz9ahqL6BAjT6d1xQ2WQUIq4ZZJmEsIUCtH73aG7D7Vr4T3uHwprcSQG6qE+ou0fW29c/MGgbsg9LgBGKvSRmeNSBV1xnEwmMBfsHDFZzQIJzEsB4kD/BNSFNtU2KwJS0OD1TF/yn5h4MGOoltQgj7SnoxZHMBlY43Rz6SbdnHq29C4sosYQB13IAoFpBX3kArH4NRs871lDGh4lyEwk0CGdXbXeuo2DD2SK8ipti35PijGG7ATJkI9+gKpze2mYBO+T0dvEFsLfPAgZJ4ACnHZ5DBnBEAlEQHnvtJ6fH+jPfOQNwE/6LnJFLfMCuGC3UEIDumlil3ND8plvA1J2DAnhBCN0/SO1qKwip20fJfp7AD/I8W5gzY+jltQjdz2ZuZRrC3TAI/rS6fNszSfytNq99CwsQ9f7xS+Bfv9IniAC6CoeaVo8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDItMjZUMTY6NTc6MDgrMDg6MDB/MQ3FAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAyLTI2VDE2OjU3OjA4KzA4OjAwDmy1eQAAAFB0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vaG9tZS9hZG1pbi9pY29uLWZvbnQvdG1wL2ljb25fOHM1MG1ueTR5ejYvdHViaWFvemhpenVvLS5zdmcH9iuUAAAAAElFTkSuQmCC"
 			},
 			"name": "Weixin_LoadLoginQrCode_Api",
+			"requestDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "Token",
+						"example": "e59d4de8-be75-41fc-8841-44d9862d6480",
+						"javaType": "String",
+						"name": "token",
+						"required": true
+					}
+				]
+			},
 			"responseDefinition": {
 				"fieldDefinitions": [
 					{
@@ -289,6 +300,13 @@
 			"requestDefinition": {
 				"fieldDefinitions": [
 					{
+						"comment": "Token",
+						"example": "e59d4de8-be75-41fc-8841-44d9862d6480",
+						"javaType": "String",
+						"name": "token",
+						"required": true
+					},
+					{
 						"comment": "昵称",
 						"example": "filehelper",
 						"javaType": "String",
@@ -300,17 +318,6 @@
 						"example": "这是一条测试消息",
 						"javaType": "String",
 						"name": "msg",
-						"required": true
-					}
-				]
-			},
-			"responseDefinition": {
-				"fieldDefinitions": [
-					{
-						"comment": "是否成功（0否1是）",
-						"example": null,
-						"javaType": "Integer",
-						"name": "data",
 						"required": true
 					}
 				]
@@ -329,6 +336,21 @@
 			"code": 1011,
 			"message": "密码错误",
 			"name": "invalid_password"
+		},
+		{
+			"code": 1012,
+			"message": "微信登录失败",
+			"name": "weixin_login_error"
+		},
+		{
+			"code": 1013,
+			"message": "微信还没有登录",
+			"name": "weixin_need_login"
+		},
+		{
+			"code": 1014,
+			"message": "微信发送消息失败",
+			"name": "weixin_send_msg_error"
 		}
 	],
 	"javaPackageName": "com.github.ziran_ink.ziran_api_server",

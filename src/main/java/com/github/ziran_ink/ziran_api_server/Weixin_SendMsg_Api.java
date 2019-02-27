@@ -2,107 +2,80 @@ package com.github.ziran_ink.ziran_api_server;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.github.microprograms.micro_api_runtime.annotation.MicroApi;
+import com.github.microprograms.micro_api_runtime.exception.MicroApiPassthroughException;
 import com.github.microprograms.micro_api_runtime.model.Request;
 import com.github.microprograms.micro_api_runtime.model.Response;
 import com.github.microprograms.micro_api_runtime.utils.MicroApiUtils;
 import com.github.microprograms.micro_nested_data_model_runtime.Comment;
 import com.github.microprograms.micro_nested_data_model_runtime.Required;
 import com.github.ziran_ink.web_weixin_sdk.core.Weixin;
-import com.github.ziran_ink.ziran_api_server.utils.WeixinMsgHandler;
+import com.github.ziran_ink.ziran_api_server.utils.Tokens;
 
 @MicroApi(comment = "微信 - 发送消息", version = "v0.0.5")
 public class Weixin_SendMsg_Api {
-	private static Logger log = LoggerFactory.getLogger(Weixin_SendMsg_Api.class);
 
-	private static void core(Req req, Resp resp) throws Exception {
-		Weixin weixin = Weixin_LoadLoginQrCode_Api.weixin;
+    private static Logger log = LoggerFactory.getLogger(Weixin_SendMsg_Api.class);
 
-		if (!weixin.getStorage().isAlive()) {
-			weixin.login();
-			log.info("登陆成功");
-		}
+    private static void core(Req req, Response resp) throws Exception {
+        if (!Tokens.isValidToken(req.getToken())) {
+            throw new MicroApiPassthroughException(ErrorCodeEnum.invalid_token);
+        }
+        Weixin weixin = Tokens.getTokenProp(req.getToken(), "weixin");
+        if (weixin == null || !weixin.getStorage().isAlive()) {
+            throw new MicroApiPassthroughException(ErrorCodeEnum.invalid_token);
+        }
+        if (!weixin.sendMsgByNickName(req.getMsg(), req.getNickname())) {
+            throw new MicroApiPassthroughException(ErrorCodeEnum.weixin_send_msg_error);
+        }
+    }
 
-		log.info("微信初始化");
-		if (!weixin.webWxInit()) {
-			log.error("微信初始化异常");
-		}
+    public static Response execute(Request request) throws Exception {
+        Req req = (Req) request;
+        MicroApiUtils.throwExceptionIfBlank(req.getToken(), "token");
+        MicroApiUtils.throwExceptionIfBlank(req.getNickname(), "nickname");
+        MicroApiUtils.throwExceptionIfBlank(req.getMsg(), "msg");
+        Response resp = new Response();
+        core(req, resp);
+        return resp;
+    }
 
-		log.info("开启微信状态通知");
-		weixin.wxStatusNotify();
+    public static class Req extends Request {
 
-		log.info(String.format("欢迎回来， %s", weixin.getStorage().getNickName()));
+        @Comment(value = "Token")
+        @Required(value = true)
+        private String token;
 
-		log.info("开始接收消息");
-		weixin.startReceiving();
+        public String getToken() {
+            return token;
+        }
 
-		log.info("获取联系人信息");
-		weixin.webWxGetContact();
+        public void setToken(String token) {
+            this.token = token;
+        }
 
-		log.info("获取群好友及群好友列表");
-		weixin.WebWxBatchGetContact();
+        @Comment(value = "昵称")
+        @Required(value = true)
+        private String nickname;
 
-		log.info("缓存本次登陆好友相关消息");
-		weixin.setUserInfo(); // 登陆成功后缓存本次登陆好友相关消息（NickName, UserName）
+        public String getNickname() {
+            return nickname;
+        }
 
-		log.info("开启微信状态检测线程");
-		weixin.startCheckLoginStatus();
+        public void setNickname(String nickname) {
+            this.nickname = nickname;
+        }
 
-		log.info("开始消息处理线程");
-		weixin.startHandleMsg(new WeixinMsgHandler());
+        @Comment(value = "消息")
+        @Required(value = true)
+        private String msg;
 
-		resp.setData(weixin.sendMsgByNickName(req.getMsg(), req.getNickname()) ? 1 : 0);
-	}
+        public String getMsg() {
+            return msg;
+        }
 
-	public static Response execute(Request request) throws Exception {
-		Req req = (Req) request;
-		MicroApiUtils.throwExceptionIfBlank(req.getNickname(), "nickname");
-		MicroApiUtils.throwExceptionIfBlank(req.getMsg(), "msg");
-		Resp resp = new Resp();
-		core(req, resp);
-		return resp;
-	}
-
-	public static class Req extends Request {
-
-		@Comment(value = "昵称")
-		@Required(value = true)
-		private String nickname;
-
-		public String getNickname() {
-			return nickname;
-		}
-
-		public void setNickname(String nickname) {
-			this.nickname = nickname;
-		}
-
-		@Comment(value = "消息")
-		@Required(value = true)
-		private String msg;
-
-		public String getMsg() {
-			return msg;
-		}
-
-		public void setMsg(String msg) {
-			this.msg = msg;
-		}
-	}
-
-	public static class Resp extends Response {
-
-		@Comment(value = "是否成功（0否1是）")
-		@Required(value = true)
-		private Integer data;
-
-		public Integer getData() {
-			return data;
-		}
-
-		public void setData(Integer data) {
-			this.data = data;
-		}
-	}
+        public void setMsg(String msg) {
+            this.msg = msg;
+        }
+    }
 }

@@ -3,75 +3,78 @@ SLF4J: Found binding in [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/tar
 SLF4J: Found binding in [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/lib/ziran-api-designer-1.0.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: Found binding in [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/lib/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-01:07:27,888 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-01:07:27,888 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-01:07:27,888 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml]
-01:07:27,889 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
-01:07:27,889 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml]
-01:07:27,889 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/lib/ziran-api-designer-1.0.7.jar!/logback.xml]
-01:07:27,907 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5474c6c - URL [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml] is not of type file
-01:07:27,949 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-01:07:27,950 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-01:07:27,955 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
-01:07:27,962 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-01:07:28,010 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
-01:07:28,011 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
-01:07:28,011 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-01:07:28,012 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@4b6995df - Registering current configuration as safe fallback point
+11:44:30,960 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+11:44:30,960 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+11:44:30,960 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml]
+11:44:30,961 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+11:44:30,961 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml]
+11:44:30,961 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/lib/ziran-api-designer-1.0.7.jar!/logback.xml]
+11:44:30,978 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5474c6c - URL [jar:file:/Users/xuzewei/ziran/java/ziran-api-server/target/ziran-api-server.jar!/logback.xml] is not of type file
+11:44:31,026 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:44:31,026 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:44:31,034 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:44:31,041 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:44:31,092 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+11:44:31,092 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:44:31,092 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:44:31,093 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@4b6995df - Registering current configuration as safe fallback point
 
 SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
-01:07:28.823 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Api_QueryVersion_Api, class=com.github.ziran_ink.ziran_api_server.Api_QueryVersion_Api
-01:07:28.827 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Security_Login_Api, class=com.github.ziran_ink.ziran_api_server.Security_Login_Api
-01:07:28.828 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Security_Logout_Api, class=com.github.ziran_ink.ziran_api_server.Security_Logout_Api
-01:07:28.829 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_CreatePicDataUrl_Api, class=com.github.ziran_ink.ziran_api_server.Tools_CreatePicDataUrl_Api
-01:07:28.829 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_CreateUuid_Api, class=com.github.ziran_ink.ziran_api_server.Tools_CreateUuid_Api
-01:07:28.830 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_DownloadFileByAria2_Api, class=com.github.ziran_ink.ziran_api_server.Tools_DownloadFileByAria2_Api
-01:07:28.831 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_ExecuteCommandByBash_Api, class=com.github.ziran_ink.ziran_api_server.Tools_ExecuteCommandByBash_Api
-01:07:28.832 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_QueryLatestVersionByMavenCoordinate_Api, class=com.github.ziran_ink.ziran_api_server.Tools_QueryLatestVersionByMavenCoordinate_Api
-01:07:28.832 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Weixin_LoadLoginQrCode_Api, class=com.github.ziran_ink.ziran_api_server.Weixin_LoadLoginQrCode_Api
-01:07:28.833 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Weixin_SendMsg_Api, class=com.github.ziran_ink.ziran_api_server.Weixin_SendMsg_Api
-01:07:28.833 [main] INFO  c.g.m.m.MicroHttpServer - ssl
-01:07:28.854 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1117ms to org.eclipse.jetty.util.log.Slf4jLog
-01:07:29.012 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.z-SNAPSHOT; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_111-b14
-01:07:29.087 [main] INFO  o.e.jetty.util.ssl.SslContextFactory - x509=X509@80503(alias,h=[api.ziran.ink],w=[]) for SslContextFactory@4b553d26[provider=null,keyStore=file:///Users/xuzewei/ziran/java/ziran-api-server/src/main/java/api.ziran.ink.jks,trustStore=null]
-01:07:29.298 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@501edcf1{SSL,[ssl, http/1.1]}{0.0.0.0:8607}
-01:07:29.299 [main] INFO  org.eclipse.jetty.server.Server - Started @1564ms
-01:08:08.259 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 登陆成功
-01:08:08.260 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 微信初始化
-01:08:09.119 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 开启微信状态通知
-01:08:09.616 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 欢迎回来， XZW
-01:08:09.617 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 开始接收消息
-01:08:09.617 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 获取联系人信息
-01:08:14.300 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 获取群好友及群好友列表
-01:08:15.463 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 缓存本次登陆好友相关消息
-01:08:15.463 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 开启微信状态检测线程
-01:08:15.464 [qtp1635985705-27] INFO  c.g.z.z.Weixin_SendMsg_Api - 开始消息处理线程
-01:08:15.465 [qtp1635985705-27] INFO  c.g.z.w.core.impl.WeixinImpl - +++++++++++++++++++开始消息处理+++++++++++++++++++++
-01:08:15.813 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"2","retcode":"0"}
-01:08:39.310 [qtp1635985705-25] INFO  c.g.z.z.Weixin_SendMsg_Api - 微信初始化
-01:08:40.125 [qtp1635985705-25] INFO  c.g.z.z.Weixin_SendMsg_Api - 开启微信状态通知
-01:08:40.615 [qtp1635985705-25] INFO  c.g.z.z.Weixin_SendMsg_Api - 欢迎回来， XZW
-01:08:40.615 [qtp1635985705-25] INFO  c.g.z.z.Weixin_SendMsg_Api - 开始接收消息
-01:08:40.616 [qtp1635985705-25] INFO  c.g.z.z.Weixin_SendMsg_Api - 获取联系人信息
-01:08:43.360 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
-01:08:45.338 [qtp1635985705-25] INFO  c.g.z.z.Weixin_SendMsg_Api - 获取群好友及群好友列表
-01:08:46.761 [qtp1635985705-25] INFO  c.g.z.z.Weixin_SendMsg_Api - 缓存本次登陆好友相关消息
-01:08:46.762 [qtp1635985705-25] INFO  c.g.z.z.Weixin_SendMsg_Api - 开启微信状态检测线程
-01:08:46.764 [qtp1635985705-25] INFO  c.g.z.z.Weixin_SendMsg_Api - 开始消息处理线程
-01:08:46.764 [qtp1635985705-25] INFO  c.g.z.w.core.impl.WeixinImpl - +++++++++++++++++++开始消息处理+++++++++++++++++++++
-01:08:47.047 [Thread-12] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"2","retcode":"0"}
-01:08:47.049 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"2","retcode":"0"}
-01:09:00.972 [Thread-12] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"2","retcode":"0"}
-01:09:00.972 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"2","retcode":"0"}
-01:09:01.134 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - 收到消息一条，来自: @b98f398364391d47ba64a64c3a430908aeb0c114b5f13013818eb9abb8d4bfbc
-01:09:01.148 [Thread-12] INFO  c.g.z.w.core.impl.WeixinImpl - 收到消息一条，来自: @b98f398364391d47ba64a64c3a430908aeb0c114b5f13013818eb9abb8d4bfbc
-01:09:04.454 [Thread-12] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"2","retcode":"0"}
-01:09:04.454 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"2","retcode":"0"}
-01:09:04.603 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - 收到消息一条，来自: @b98f398364391d47ba64a64c3a430908aeb0c114b5f13013818eb9abb8d4bfbc
-01:09:04.615 [Thread-12] INFO  c.g.z.w.core.impl.WeixinImpl - 收到消息一条，来自: @b98f398364391d47ba64a64c3a430908aeb0c114b5f13013818eb9abb8d4bfbc
-01:09:29.748 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
-01:09:29.749 [Thread-12] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
-01:09:55.041 [Thread-12] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
-01:09:55.041 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
-01:10:20.336 [Thread-12] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
-01:10:20.338 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:44:31.905 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Api_QueryVersion_Api, class=com.github.ziran_ink.ziran_api_server.Api_QueryVersion_Api
+11:44:31.909 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Security_Login_Api, class=com.github.ziran_ink.ziran_api_server.Security_Login_Api
+11:44:31.910 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Security_Logout_Api, class=com.github.ziran_ink.ziran_api_server.Security_Logout_Api
+11:44:31.912 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_CreatePicDataUrl_Api, class=com.github.ziran_ink.ziran_api_server.Tools_CreatePicDataUrl_Api
+11:44:31.914 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_CreateUuid_Api, class=com.github.ziran_ink.ziran_api_server.Tools_CreateUuid_Api
+11:44:31.915 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_DownloadFileByAria2_Api, class=com.github.ziran_ink.ziran_api_server.Tools_DownloadFileByAria2_Api
+11:44:31.915 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_ExecuteCommandByBash_Api, class=com.github.ziran_ink.ziran_api_server.Tools_ExecuteCommandByBash_Api
+11:44:31.916 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Tools_QueryLatestVersionByMavenCoordinate_Api, class=com.github.ziran_ink.ziran_api_server.Tools_QueryLatestVersionByMavenCoordinate_Api
+11:44:31.917 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Weixin_LoadLoginQrCode_Api, class=com.github.ziran_ink.ziran_api_server.Weixin_LoadLoginQrCode_Api
+11:44:31.917 [main] INFO  c.g.m.m.MicroApiRuntime - api loaded, apiName=Weixin_SendMsg_Api, class=com.github.ziran_ink.ziran_api_server.Weixin_SendMsg_Api
+11:44:31.918 [main] INFO  c.g.m.m.MicroHttpServer - ssl
+11:44:31.939 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1141ms to org.eclipse.jetty.util.log.Slf4jLog
+11:44:32.102 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.z-SNAPSHOT; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_111-b14
+11:44:32.208 [main] INFO  o.e.jetty.util.ssl.SslContextFactory - x509=X509@80503(alias,h=[api.ziran.ink],w=[]) for SslContextFactory@4b553d26[provider=null,keyStore=file:///Users/xuzewei/ziran/java/ziran-api-server/src/main/java/api.ziran.ink.jks,trustStore=null]
+11:44:32.445 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@fecdc7d{SSL,[ssl, http/1.1]}{0.0.0.0:8607}
+11:44:32.446 [main] INFO  org.eclipse.jetty.server.Server - Started @1650ms
+11:45:03.322 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - 微信登陆中……
+11:45:15.690 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - 请点击微信确认按钮，进行登陆
+11:45:15.690 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - 微信登陆中……
+11:45:33.422 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - 微信登陆成功
+11:45:33.422 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 登陆成功
+11:45:33.422 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 微信初始化
+11:45:34.097 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 开启微信状态通知
+11:45:34.272 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 欢迎回来， XZW
+11:45:34.272 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 开始接收消息
+11:45:34.273 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 获取联系人信息
+11:45:39.075 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 获取群好友及群好友列表
+11:45:40.189 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 缓存本次登陆好友相关消息
+11:45:40.189 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 开启微信状态检测线程
+11:45:40.190 [Thread-9] INFO  c.g.z.z.Weixin_LoadLoginQrCode_Api - 开始消息处理线程
+11:45:40.191 [Thread-9] INFO  c.g.z.w.core.impl.WeixinImpl - +++++++++++++++++++开始消息处理+++++++++++++++++++++
+11:45:59.613 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:46:26.955 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:46:52.247 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:47:17.540 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:47:42.833 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:48:08.126 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:48:33.419 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:48:58.712 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:49:24.005 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:49:49.298 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:50:14.590 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:50:39.812 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:51:05.021 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:51:30.265 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:51:55.562 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:52:20.850 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:52:46.144 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:53:11.439 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:53:36.673 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:54:01.919 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:54:27.214 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:54:52.507 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:55:17.799 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:55:43.092 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:56:08.384 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:56:33.678 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
+11:56:58.970 [Thread-10] INFO  c.g.z.w.core.impl.WeixinImpl - {"selector":"0","retcode":"0"}
